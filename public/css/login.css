@@ -1,0 +1,63 @@
+body{
+    background-color: #ffffff;
+    
+}
+.el-header {
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: var(--el-box-shadow-light);
+}
+
+.el-header .logo {
+    padding-top: 1.4ch;
+}
+
+.bg {
+    background-color: #ECE9F4;
+    background-image: url('../imgs/default.png');
+    background-repeat: no-repeat; 
+    background-position: 0px 50px;
+    background-size: contain; 
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.051),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.073),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.09),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.107),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.129),
+  100px 100px 80px rgba(0, 0, 0, 0.18)
+;
+}
+
+/* .bg .title{
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+.bg .el-text{
+    font-size: 4ch;
+    font-weight: 300;
+} */
+
+
+.bg .el-input:first-child{
+    padding-top: 19ch;
+}
+.bg .el-input{
+    padding-top: 10px;
+}
+
+.bg .el-button{
+    padding: 2ch 14ch;
+}
+
+.bg .el-link{
+    margin: 2ch 4ch;
+}

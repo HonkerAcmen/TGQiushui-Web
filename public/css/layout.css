@@ -1,0 +1,174 @@
+ul,
+li{
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* head区域 */
+.el-container .el-header {
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: var(--el-box-shadow-light);
+}
+
+.el-container .el-header .logo {
+    margin-top: 10px;
+}
+
+.el-container .el-header .icon {
+    top: 10px;
+    position: absolute;
+    left: 95%;
+    cursor: pointer;
+}
+
+.el-container .el-header .icon .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ECE9F4;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: visibility 0.2s, opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.el-container .el-header .icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* main区域 */
+
+.el-container .el-main {
+    background-color: #ffffff;
+}
+
+
+.el-container .layout-contont .warpper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* warpper 左边 */
+.el-container .layout-contont .warpper .left {
+    width: 400px;
+    height: 400px;
+    transform: translateX(70%);
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+/* warpper 左边 登录按钮 */
+.el-container .layout-contont .warpper .left .el-button {
+    margin-top: 20px;
+}
+
+.el-container .layout-contont .warpper .left .el-button span {
+    margin-top: 0px;
+    font-size: 2.4ch;
+}
+
+/* warpper 左边 标题 */
+.el-container .layout-contont .warpper .left .title {
+    font-weight: 300;
+    font-size: 5ch;
+    margin-top: 50px;
+}
+
+.el-container .layout-contont .warpper .left span {
+    font-weight: 200;
+    font-size: 1.7ch;
+    margin-top: 50px;
+    display: block;
+}
+
+/* warpper 右边 */
+.el-container .layout-contont .warpper .right {
+    width: 400px;
+    height: 400px;
+    background-color: #fdfdfd;
+    background-image: url(../imgs/data.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(10%);
+}
+
+/* home-page1 区域*/
+
+.el-container .home-page1 {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 55ch;
+    
+}
+
+/* home-page1 标题 */
+.el-container .home-page1 span {
+    display:block;
+    font-size: 1cm;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* home-page1 图片 */
+.el-container .home-page1 li{
+    float: left;
+    width: 300px;
+    height: 10ch;
+    margin-top: 4ch;
+    margin-right: 8ch;
+    transition: all 0.5s;
+}
+
+.el-container .home-page1 li:first-child{
+    margin-left: 3ch;
+}
+
+.el-container .home-page1 li:last-child{
+    margin-right: 0ch;
+}
+
+.el-container .home-page1 li:hover{
+    transition: all 0.5s;
+    margin-top: -2ch;
+}
+
+.el-container .home-page1 li img{
+    width: 304px;
+}
+
+.el-container .home-page1 li h3{
+    text-align: center;
+    font-size: 3ch;
+    font-weight: 300;
+}
+
+
+/* 底部栏 */
+.el-container .under {
+    background-color: #404040;
+    width: 100%;
+    height: 6ch;
+}
+
+.el-container .under span {
+    display: block;
+    text-align: center;
+    padding-top: 2ch;
+    color: #f9f9f9;
+}
