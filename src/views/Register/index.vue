@@ -1,5 +1,11 @@
 <template>
     <link rel="stylesheet" href="/css/register.css">
+    <el-header>
+    <div class="logo">
+      <img style="width: 200px" src="/imgs/cover.png" alt="logo" />
+    </div>
+  </el-header>
+  <div class="bg">
     <el-form ref="ruleFormRef" style="max-width: 600px" :model="ruleForm" status-icon :rules="rules" label-width="auto"
         class="ruleForm">
         <img src="/imgs/cover.png" alt="">
@@ -26,6 +32,8 @@
             
         </el-form-item>
     </el-form>
+  </div>
+    
 </template>
 
 <script lang="ts" setup>

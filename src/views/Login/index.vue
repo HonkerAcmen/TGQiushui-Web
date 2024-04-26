@@ -6,8 +6,9 @@
     </div>
   </el-header>
   <div class="bg">
+    <img src="/imgs/cover.png" alt="">
     <!-- <div class="title"><el-text type="default">登录</el-text></div> -->
-    <el-input v-model="ID" style="width: 240px" placeholder="请输入账号" />
+    <el-input v-model="ID" style="width: 240px" placeholder="请输入账号" /><br>
     <el-input v-model="Password" style="width: 240px" type="password" placeholder="请输入密码" show-password />
     <br>
     <el-link type="primary" href="/register">注册账号</el-link>
