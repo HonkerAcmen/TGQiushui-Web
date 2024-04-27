@@ -8,6 +8,7 @@ export const UseRetrievePassStore = defineStore("RetrievePassWord", () => {
   const email = ref("");
   const emailVeriflcationCode = ref();
   const state = ref("process")
+  const oldPassword = ref("")
   const newPassword = ref("")
 
   const pattern_email: RegExp =
@@ -36,7 +37,8 @@ export const UseRetrievePassStore = defineStore("RetrievePassWord", () => {
             // 判断验证码是否正确
             if (emailVeriflcationCode.value === "qwer"){
                 count.value++
-                // 发送请求，如果发送成功，则更改状态为success 待写
+                // 发送请求，如果发送成功，然后判断旧密码是否正确，然后更改密码，
+                // 更改成功就显示 success (待写)
                 state.value = "success"
             }else{
                 state.value = "error"
@@ -57,6 +59,7 @@ export const UseRetrievePassStore = defineStore("RetrievePassWord", () => {
     }
   };
   return {
+    oldPassword,
     newPassword,
     state,
     count,

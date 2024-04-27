@@ -8,6 +8,15 @@
     padding-top: 1.4ch;
 }
 
+.el-main{
+    width: 600px;
+    height: 500px;
+    margin-top: 3ch;
+    margin-left: 50ch;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
 .steps{
     position: absolute;
     width: 100%;
@@ -17,16 +26,25 @@
     transform: translate(-50%, -470%);
 }
 
-.el-input{
+.vinput1{
     position: absolute;
-    /* background-color: green; */
     width: 100%;
     top: 37%;
-    left: 50%;
+    left: 92%;
     transform: translate(-50%, -50%);
 }
+
+.vinput2{
+    text-align: center;
+    margin-top: 200px;
+}
+.vinput2 .el-input{
+    margin-top: 10px;
+}
+
 .el-button{
     position: absolute;
+    display: inline-block;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -70%);
