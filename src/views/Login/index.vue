@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="/css/login.css">
   <el-header>
     <div class="logo">
-      <img style="width: 200px" src="/imgs/cover.png" alt="logo" />
+      <a href="/"><img style="width: 200px" src="/imgs/cover.png" alt="logo" /></a>
     </div>
   </el-header>
   <div class="bg">
@@ -12,7 +12,7 @@
     <el-input v-model="Password" style="width: 240px" type="password" placeholder="请输入密码" show-password />
     <br>
     <el-link type="primary" href="/register">注册账号</el-link>
-    <el-link type="primary">忘记密码</el-link>
+    <el-link type="primary" href="/retrieve">忘记密码</el-link>
     <br>
     <el-button type="primary" @click="login">登录</el-button>
     
@@ -23,10 +23,15 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import router from '@/router/index'
+import { ElMessage } from 'element-plus';
 
 let ID = ref("")
 let Password = ref("")
 
 function login(){
+  ElMessage({
+    message: "1",
+    duration: 0
+  })
 }
 </script>

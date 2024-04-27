@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/register.css">
     <el-header>
     <div class="logo">
-      <img style="width: 200px" src="/imgs/cover.png" alt="logo" />
+        <a href="/"><img style="width: 200px" src="/imgs/cover.png" alt="logo" /></a>
     </div>
   </el-header>
   <div class="bg">
@@ -78,9 +78,14 @@ const validatePass = (rule: any, value: any, callback: any) => {
 const validatePass2 = (rule: any, value: any, callback: any) => {
     if (value === '') {
         callback(new Error('请再次输入密码'))
-    } else if (value !== ruleForm.pass) {
+    } 
+    else if (value !== ruleForm.pass) {
         callback(new Error("两次输入的不一致！"))
-    } else {
+    } 
+    else if (!pattern_pass.test(value)){
+        callback(new Error('密码只能包含字母、数字、下划线、@符号'))
+    }
+    else {
         callback()
     }
 }

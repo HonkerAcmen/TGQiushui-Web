@@ -3,7 +3,7 @@
     <el-container>
         <el-header>
             <div class="logo">
-                <img style="width: 200px" src="/imgs/cover.png" alt="logo" />
+                <a href="/"><img style="width: 200px" src="/imgs/cover.png" alt="logo" /></a>
             </div>
             <div class="icon">
                 <el-avatar :icon="UserFilled" />
@@ -33,7 +33,6 @@
                         </el-icon>
                         加入Team
                     </p>
-                    <el-button type="primary" @click="GoToLoginPage" >登录</el-button>
                 </div>
             </div>
         </el-header>

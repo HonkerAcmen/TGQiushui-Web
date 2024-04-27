@@ -1,0 +1,47 @@
+.el-header {
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: var(--el-box-shadow-light);
+}
+
+.el-header .logo {
+    padding-top: 1.4ch;
+}
+
+.steps{
+    position: absolute;
+    width: 100%;
+    /* background-color: green; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -470%);
+}
+
+.el-input{
+    position: absolute;
+    /* background-color: green; */
+    width: 100%;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.el-button{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.el-alert {
+    position: absolute;
+    width: 30%;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.el-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
