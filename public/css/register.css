@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .el-header {
     position: relative;
     background-color: #f9f9f9;

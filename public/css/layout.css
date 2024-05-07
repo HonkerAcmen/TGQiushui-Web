@@ -1,11 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 ul,
 li{
     list-style-type: none;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
 }
 
 /* head区域 */
@@ -53,6 +53,7 @@ ul {
 
 .el-container .el-main {
     background-color: #ffffff;
+    /* height: 100vh; */
 }
 
 
@@ -111,7 +112,7 @@ ul {
 .el-container .home-page1 {
     background-color: #f9f9f9;
     width: 100%;
-    height: 55ch;
+    height: 55vh;
     
 }
 

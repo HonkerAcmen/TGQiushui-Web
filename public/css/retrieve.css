@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 叶头logo样式 */
 .el-header {
     position: relative;
     background-color: #f9f9f9;
@@ -8,58 +14,63 @@
     padding-top: 1.4ch;
 }
 
-.el-main{
-    width: 600px;
-    height: 500px;
+
+/* 中间的盒子 */
+.el-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 主要的盒子 后面的小背景板*/
+.el-main {
+    max-width: 600px;
+    width: 90%;
+    height: auto; 
     margin-top: 3ch;
-    margin-left: 50ch;
     border-radius: 5px;
     background-color: #f9f9f9;
 }
 
-.steps{
-    position: absolute;
+/* 步骤条 */
+.el-container .steps {
     width: 100%;
-    /* background-color: green; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -470%);
+    height: 5vh;
+    margin-top: 2rem; 
 }
 
-.vinput1{
-    position: absolute;
-    width: 100%;
-    top: 37%;
-    left: 92%;
-    transform: translate(-50%, -50%);
+/* 输入框样式 */
+.el-container .vinput1,
+.vinput2 {
+    width: 90%; 
+    max-width: 400px; 
+    margin-top: 2rem; 
+    margin-left: 10rem;
 }
 
-.vinput2{
-    text-align: center;
-    margin-top: 200px;
-}
-.vinput2 .el-input{
-    margin-top: 10px;
+.el-container .vinput1 .el-input,
+.vinput2 .el-input {
+    width: 100%; 
+    margin-top: 1rem; 
 }
 
-.el-button{
-    position: absolute;
-    display: inline-block;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+/* 按钮样式 */
+.el-button {
+    margin-top: 2rem; 
+    margin-left: 15rem;
 }
+
+/* 提醒样式 */
 .el-alert {
-    position: absolute;
-    width: 30%;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 60%; 
+    max-width: 300px;
+    margin-top: 2rem; 
+    margin-left: 9rem;
 }
 
+/* 链接样式 */
 .el-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 2rem; 
+    margin-left: 14rem;
+
 }
